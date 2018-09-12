@@ -1,0 +1,51 @@
+<html>
+    
+    <body>
+    <form>
+    No1 : <input type="text" id="num1">
+        
+        No2: <input type="text" id= "num2">
+        
+        <input type ="button" onclick="addition()" value="+">
+        <input type ="button" onclick="sub()" value="-">
+        <input type ="button" onclick="multi()" value="*">
+        <input type ="button" onclick="div()" value="/">
+        <p id="answer"> </p>
+        </form>
+        
+        
+    <script>
+        
+        function addition() {
+            var a = document.getElementById("num1").value;
+            var  b = document.getElementById("num2").value;
+            var add = Number(a)+Number(b);
+            
+            document.getElementById("answer").innerHTML = add;
+        }
+        function sub(){
+            var a= document.getElementById("num1").value;
+             var  b = document.getElementById("num2").value;
+            var sub= Number(a)-Number(b);
+            document.getElementById("answer").innerHTML = sub;
+        }
+        function multi(){
+           var a= document.getElementById("num1").value;
+            var b= document.getElementById("num2").value;
+            var multi = Number(a)*Number(b);
+            document.getElementById("answer").innerHTML = multi;
+        }
+         function div(){
+           var a= document.getElementById("num1").value;
+            var b= document.getElementById("num2").value;
+            var div = Number(a)/Number(b);
+            document.getElementById("answer").innerHTML = div;
+        }
+        </script>
+    
+    
+    
+    </body>
+    
+    
+    </html>
